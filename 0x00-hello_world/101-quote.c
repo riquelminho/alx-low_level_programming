@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - Entry point
+ * main - function that print a line to the standard error
  * Return:1
  */
 int main(void)
