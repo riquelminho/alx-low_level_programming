@@ -1,23 +1,33 @@
 #include "main.h"
 
 /**
-  * print_last_digit - Prints the last digit of a number
-  * @n: The number to be treated
+  * jack_bauer - Prints every minute of the day of Jack Bauer
   *
-  * Return: Value of the last digit of number
+  * Return: ...
   */
-int print_last_digit(int n)
+void jack_bauer(void)
 {
-	int last;
+	int a, b, c, d;
 
-	last = n % 10;
-
-	if (last < 0)
+	for (a = 0; a <= 2; a++)
 	{
-		last = last * -1;
+		for (b = 0; b <= 9; b++)
+		{
+			if ((a <= 1 && b <= 9) || (a <= 2 && b <= 3))
+			{
+				for (c = 0; c <= 5; c++)
+				{
+					for (d = 0; d <= 9; d++)
+					{
+						_putchar(a + '0');
+						_putchar(b + '0');
+						_putchar(58);
+						_putchar(c + '0');
+						_putchar(d + '0');
+						_putchar('\n');
+					}
+				}
+			}
+		}
 	}
-
-	_putchar(last + '0');
-
-	return (last);
 }
