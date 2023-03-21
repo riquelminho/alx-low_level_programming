@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* main - Contains al the prototypes of all your functions 
+* main - Contains al the prototypes of all your functions
 * main - Entry point
 * Return: Always 0
 */
@@ -17,5 +17,5 @@ putchar('h');
 putchar('a');
 putchar('r');
 putchar('\n');
-return 0;
+return (0);
 }
