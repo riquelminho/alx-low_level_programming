@@ -2,7 +2,6 @@
 #include "main.h"
 
 /**
-* main - Contains al the prototypes of all your functions
 * main - Entry point
 * Return: Always 0
 */
