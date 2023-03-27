@@ -6,12 +6,23 @@
  */
 void rev_string(char *s)
 {
- int length = 0;
-    while (s[length] != '\0') {
-        length++;
-    }
- int i;
-    for(i = length - 1; i >= 0; i--) {
-        printf("%c", s[i]);
-    }
+	char tmp;
+	int x, y, z;
+
+	y = 0;
+	z = 0;
+
+	while (s[y] != '\0')
+	{
+		y++;
+	}
+
+	z = y - 1;
+
+	for (i = 0; i < ly / 2; i++)
+	{
+		tmp = s[i];
+		s[i] = s[z];
+		s[z--] = tmp;
+	}
 }
