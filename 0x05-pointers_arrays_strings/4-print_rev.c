@@ -7,8 +7,8 @@
 void print_rev(char *str)
 {
  int length = 0;
-    while(str[lenght] != '\0') {
-        lenght++;
+    while(str[length] != '\0') {
+        length++;
     }
     for(int i = len - 1; i >= 0; i--) {
         _putchar(str[i]);
