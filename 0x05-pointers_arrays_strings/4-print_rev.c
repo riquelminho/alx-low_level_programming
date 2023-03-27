@@ -10,7 +10,7 @@ void print_rev(char *str)
     while(str[length] != '\0') {
         length++;
     }
-    for(int i = len - 1; i >= 0; i--) {
+    for(int i = length - 1; i >= 0; i--) {
         _putchar(str[i]);
     }
     _putchar('\n');
