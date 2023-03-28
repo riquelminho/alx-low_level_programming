@@ -22,7 +22,8 @@ for (i = length / 2; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
 }
-} else if (length % 2)
+}
+  else if (length % 2)
 {
 for (j = (length - 1) / 2; j < length - 1; j++)
 {
