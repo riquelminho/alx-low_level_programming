@@ -1,22 +1,27 @@
-#include "main.h"
+#include "mainh"
 /**
- * reverse_array - prints reverse array.
- * @a: array to be compared.
- * @n: size of array.
- * Return: reversed array.
+ * _strncat - concatenate strings, defining the size of second string.
+ * @dest: string with concatenation
+ * @src: string to be concatenated
+ * @n: size of second string
+ * Return: Always 0.
  */
-void reverse_array(int *a, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	int swap, begin, end;
+	int lengthD, lengthS;
 
-	begin = 0;
-	end = n - 1;
-	while (begin < end)
+	lengthD = 0;
+	lengthS = 0;
+
+	while (*(dest + lengthD) != '\0')
+		lengthD++;
+
+	while (*(src + lengthS) != '\0' && lengthD < 97 && lengthS < n)
 	{
-		swap = *(a + begin);
-		*(a + begin) = *(a + end);
-		*(a + end) = swap;
-		begin++;
-		end--;
+		*(dest + lengthD) = *(src + lengthS);
+		lengthD++;
+		lengthS++;
 	}
+	*(dest + lengthD) = '\0';
+	return (dest);
 }
