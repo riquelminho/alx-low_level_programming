@@ -5,7 +5,7 @@
 *
 * Return: String with all letters Uppercased.
 */
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
 int i = 0;
 while (str[i] != '\0')
