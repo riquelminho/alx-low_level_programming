@@ -8,10 +8,10 @@
 */
 char *_strncat(char *dest, char *src, int n)
 {
-while (*dest != '\0') {
+while (*dest != '\0')
 dest++;
-}
-while (n > 0 && *src != '\0') {
+while (n > 0 && *src != '\0')
+{
 *dest = *src;
 dest++;
 src++;
