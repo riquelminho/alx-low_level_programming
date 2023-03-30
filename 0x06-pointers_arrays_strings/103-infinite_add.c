@@ -32,7 +32,6 @@ int i = 0, j = 0, k = 0;
     i++;
     j++;
   }
-
   if (carry > 0)
   {
     if (k >= size_r - 1)
