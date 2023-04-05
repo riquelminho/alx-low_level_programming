@@ -9,7 +9,8 @@ int _sqrt_helper(int n, int i);
   * Return: the natural square root
   */
 
-int _sqrt_recursion(int n) {
+int _sqrt_recursion(int n)
+{
     return _sqrt_helper(n, 1);
   /**
   * _sqrt_helper - Calculates natural square root
@@ -20,19 +21,23 @@ int _sqrt_recursion(int n) {
   */
 }
 
-int _sqrt_helper(int n, int i) {
-    if (n < 0) { // square root of negative number is not real
+int _sqrt_helper(int n, int i)
+{
+    if (n < 0)
+    { 
         return -1;
     }
-    if (n == 0 || n == 1) { // base case
+    if (n == 0 || n == 1)
+    {
         return n;
     }
-    if (i * i == n) { // square root found
+    if (i * i == n)
+    {
         return i;
     }
-    if (i * i > n) { // square root not found, return -1
+    if (i * i > n)
+    { 
         return -1;
     }
-    // increment i and try again
     return _sqrt_helper(n, i + 1);
 }
