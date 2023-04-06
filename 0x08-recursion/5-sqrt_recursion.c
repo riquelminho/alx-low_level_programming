@@ -10,7 +10,7 @@ int _sqrt_helper(int n, int i);
 */
 
 int _sqrt_recursion(int n)
-{
+
 return _sqrt_helper(n, 1);
 /**
 * _sqrt_helper - Calculates natural square root
@@ -19,25 +19,24 @@ return _sqrt_helper(n, 1);
 *
 * Return: the natural square root
 */
-}
 
 int _sqrt_helper(int n, int i)
 {
 if (n < 0)
-{ 
-return -1;
+{
+return (-1);
 }
 if (n == 0 || n == 1)
 {
-return n;
+return (n);
 }
 if (i * i == n)
 {
-return i;
+return (i);
 }
 if (i * i > n)
 { 
-return -1;
+return (-1);
 }
 return _sqrt_helper(n, i + 1);
 }
