@@ -7,7 +7,7 @@
   * Return: integer value
   */
 
-int is_prime_number_helper(int n, int i)
+int number_checker(int n, int i)
 {
   if (n < 2)
   {
@@ -21,10 +21,10 @@ int is_prime_number_helper(int n, int i)
   {
     return 0;
   }
-  return is_prime_number_helper(n, i + 1);
+  return number_checker(n, i + 1);
 }
 
 int is_prime_number(int n)
 {
-  return is_prime_number_helper(n, 2);
+  return number_checker(n, 2);
 }
