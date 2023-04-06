@@ -3,7 +3,7 @@
 
 
   /**
-  * number_checker - Check if number is prime
+  * check_prime - Check if number is prime
   * @n: the number to be checked
   * @i: the iteration times
   *
