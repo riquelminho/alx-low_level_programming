@@ -10,8 +10,10 @@ int _sqrt_helper(int n, int i);
 */
 
 int _sqrt_recursion(int n)
+{
+ return _sqrt_helper(n, 1);
+}
 
-return _sqrt_helper(n, 1);
 /**
 * _sqrt_helper - Calculates natural square root
 * @n: number to calculate the square root
