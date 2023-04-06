@@ -1,13 +1,8 @@
 #include "main.h"
 #include <stdio.h>
-/**
-* is_prime_number - Returns if a number is prime
-* @n: the number to be checked
-*
-* Return: integer value
-*/
 
-/**
+
+  /**
   * number_checker - Check if number is prime
   * @n: the number to be checked
   * @i: the iteration times
@@ -18,7 +13,7 @@ int number_checker(int n, int i)
 {
 if (n < 2)
 {
-return 0;
+return (0);
 }
 if (i * i > n)
 {
@@ -30,6 +25,12 @@ return (0);
 }
 return (number_checker(n, i + 1));
 }
+/**
+* is_prime_number - Returns if a number is prime
+* @n: the number to be checked
+*
+* Return: integer value
+*/
 
 int is_prime_number(int n)
 {
