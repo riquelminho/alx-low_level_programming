@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include "main.h"
 int check_palindrome(char *s, int start, int end);
 
 /**
@@ -30,7 +32,6 @@ int check_palindrome(char *s, int start, int end)
 
   return check_palindrome(s, start + 1, end - 1);
 }
-
 /**
  * _strlen_recursion - Get the length of a string
  * @s: the string to get the length
