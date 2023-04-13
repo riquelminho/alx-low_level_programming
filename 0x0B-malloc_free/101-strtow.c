@@ -1,25 +1,15 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _isspace - check if a character is whitespace
- * @c: the character to check
+ * free_grid - free a 2-dimensional array created by alloc_grid
+ * @grid: a pointer to the first column of the first row of the array
+ * @height: the number of rows in the array
  *
- * Return: 1 is c is a whitespace character, otherwise 0
+ * Return: void
  */
-int _isspace(int c)
+void free_grid(int **grid, int height)
 {
-
-}
-
-
-/**
- * strtow - split a string into words
- * @str: a pointer to the string to split
- *
- * Return: NULL if memory allocation fails or if str is NULL or empty (""),
- * otherwise return a pointer to the array of words terminated by a NULL
- */
-char **strtow(char *str)
-{
-	
+	while (height)
+		free(grid[--height]);
+	free(grid);
 }
