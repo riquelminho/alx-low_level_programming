@@ -2,17 +2,20 @@
 #include "dog.h"
 
 /**
- * struct dog - struct containing information about a dog
- * @name: pointer to a string representing the dog's name
- * @age: float representing the dog's age
- * @owner: pointer to a string representing the dog's owner's name
- *
- * Description: this struct contains information about a dog, including its name,
- * age, and owner's name.
- */
-typedef struct dog
+  * init_dog - Initializes a dog structure
+  * @d: A dog structure.
+  * @name: The name of the dog.
+  * @age: The age of the dog.
+  * @owner: The owner of the dog.
+  *
+  * Return: Nothing
+  */
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-    char *name;
-    float age;
-    char *owner;
-} dog_t;
+	if (d != NULL)
+	{
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+	}
+}
