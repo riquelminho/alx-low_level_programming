@@ -3,8 +3,11 @@
 #include <stdlib.h>
 
 /**
- * print_dog - Prints a struct dog.
- * @d: The struct dog to be printed.
+ * print_dog - prints a struct dog
+ * @d: pointer to a struct dog
+ *
+ * Description: prints the name, age, and owner of the provided struct dog,
+ * substituting "(nil)" if any of these fields are NULL.
  */
 void print_dog(struct dog *d)
 {
