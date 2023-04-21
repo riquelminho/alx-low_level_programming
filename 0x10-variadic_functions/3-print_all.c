@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
-* print_all - prints any combination of characters, integers, floats, and strings
+* print_all - prints any combination of characters,integers,floats,and strings
 * @format: format string indicating the types of arguments to print
 *
 * Return: void
