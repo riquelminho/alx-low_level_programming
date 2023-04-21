@@ -1,14 +1,12 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
-
 /**
 * print_all - prints any combination of characters, integers, floats, and strings
 * @format: format string indicating the types of arguments to print
 *
 * Return: void
 */
-
 void print_all(const char * const format, ...)
 {
 va_list args;
@@ -42,7 +40,6 @@ i++;
 va_end(args);
 printf("\n");
 }
-
 /**
 * print_a_char - Prints a character of char type
 * @separator: The separator of the character
@@ -54,7 +51,6 @@ void print_a_char(char *separator, va_list args)
 {
 printf("%s%c", separator, va_arg(args, int));
 }
-
 /**
 * print_a_integer - Prints a character of integer type
 * @separator: The separator of the character
@@ -78,7 +74,6 @@ void print_a_float(char *separator, va_list args)
 {
 printf("%s%f", separator, va_arg(args, double));
 }
-
 /**
 * print_a_char_ptr - Prints the content of pointer to char type
 * @separator: The separator of the character
