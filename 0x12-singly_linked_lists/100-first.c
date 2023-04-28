@@ -1,20 +1,13 @@
 #include <stdio.h>
+
+
 /**
- * free_list - frees a list_t list
- * @head: pointer to the head of the list
+ * startup - prints a message before the main function is executed
  *
  * Return: void
  */
-void free_list(list_t *head)
+void startup(void)
 {
-    list_t *current, *next;
-
-    current = head;
-    while (current != NULL)
-    {
-        next = current->next;
-        free(current->str);
-        free(current);
-        current = next;
-    }
+    printf("You're beat! and yet, you must allow,\n"
+           "I bore my house upon my back!\n");
 }
