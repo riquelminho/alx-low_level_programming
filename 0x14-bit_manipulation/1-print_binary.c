@@ -1,4 +1,6 @@
 #include "mainn.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * get_bit - returns the value of a bit at a given index
  * @n: the number to get the bit from
