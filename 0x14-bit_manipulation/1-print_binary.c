@@ -3,29 +3,29 @@
 #include <stdio.h>
 
 /**
- * print_binary - prints the binary representation of a number
- * @n: the number to print in binary
- *
- * Return: void
- */
+* print_binary - prints the binary representation of a number
+* @n: the number to print in binary
+*
+* Return: void
+*/
 void print_binary(unsigned long int n)
 {
-	unsigned long int printbit = 1ul << 63;
-	char c = '0';
+unsigned long int printbit = 1ul << 63;
+char c = '0';
 
-	while (!(printbit & n) && printbit != 0)
-		printbit = printbit >> 1;
+while (!(printbit & n) && printbit != 0)
+printbit = printbit >> 1;
 
-	if (printbit == 0)
-		write(1, &c, 1);
+if (printbit == 0)
+write(1, &c, 1);
 
-	while (printbit)
-	{
-		if (printbit & n)
-			c = '1';
-		else
-			c = '0';
-		write(1, &c, 1);
-		printbit = printbit >> 1;
-	}
+while (printbit)
+{
+if (printbit & n)
+c = '1';
+else
+c = '0';
+write(1, &c, 1);
+printbit = printbit >> 1;
+}
 }
