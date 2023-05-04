@@ -10,30 +10,18 @@
  */
 void print_binary(unsigned long int n)
 {
-	if (n == 0)
+	unsigned long int mask = 1;
+	unsigned int size = sizeof(unsigned long int) * 8;
+	int flag = 0;
+
+	while (size--)
 	{
-		_putchar('0');
-		return;
+		if (n & (mask << size))
+			flag = 1;
+
+		if (flag)
+			_putchar((n & (mask << size)) ? '1' : '0');
 	}
-
-	_divide(n);
-}
-
-/**
-  * _divide - ...
-  * @n: ...
-  *
-  * Return: ...
-  */
-void _divide(unsigned long int n)
-{
-	if (n < 1)
-		return;
-
-	_divide(n >> 1);
-
-	if (n & 1)
-		_putchar('1');
-	else
+	if (!flag)
 		_putchar('0');
 }
