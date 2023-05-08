@@ -5,6 +5,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <elf.h>
+#include "main.h"
 
 #define BUFFER_SIZE 128
 
